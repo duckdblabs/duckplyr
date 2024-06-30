@@ -94,6 +94,7 @@ rel_translate_lang <- function(
     env,
     # FIXME: Perform constant folding instead
     partition,
+    in_window,
     need_window
 ) {
   pkg_name <- rel_find_call(expr[[1]], env)
@@ -308,6 +309,7 @@ rel_translate <- function(
         names_data,
         env,
         partition,
+        in_window,
         need_window
       ),
       #
