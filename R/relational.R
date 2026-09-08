@@ -34,8 +34,8 @@ rel_try <- function(call, rel, ...) {
   for (i in seq_along(dots)) {
     if (isTRUE(dots[[i]])) {
       stats$fallback <- stats$fallback + 1L
+      message <- names(dots)[[i]]
       if (!dplyr_mode) {
-        message <- names(dots)[[i]]
         if (message != "-") {
           tel_collect(message, call)
         }
