@@ -29,7 +29,7 @@ df <-
   duckplyr::duckdb_tibble(x = 1:3) |>
   mutate(y = x + 1)
 #> duckdb keeps downloaded extensions and secrets in a temporary directory:
-#> ℹ /tmp/Rtmpgion0P/duckdb
+#> ℹ /tmp/Rtmp4QUj09/duckdb
 #> This is removed when the R session ends.
 #> • Extensions are re-downloaded each session.
 #> • Secrets are lost.
@@ -103,7 +103,7 @@ system.time(
     )
 )
 #>    user  system elapsed 
-#>   0.009   0.002   0.011
+#>   0.010   0.002   0.012
 ```
 
 Setting up the pipeline is fast, the size of the data does not affect
@@ -206,7 +206,7 @@ available when accessed:
 
 system.time(mean_arr_delay_ewr$mean_arr_delay[[1]])
 #>    user  system elapsed 
-#>   0.027   0.002   0.021
+#>   0.026   0.003   0.022
 ```
 
 ### Comparison
@@ -243,7 +243,7 @@ system.time(
     )
 )
 #>    user  system elapsed 
-#>   0.037   0.008   0.045
+#>   0.035   0.015   0.049
 ```
 
 See also the [duckplyr: dplyr Powered by
