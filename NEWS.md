@@ -1,5 +1,24 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# duckplyr 1.2.1.9913 (2026-09-13)
+
+## Bug fixes
+
+- Improve and test fallback telemetry (#115).
+
+## Features
+
+- Prefer `cli::cli_abort()` over `stop()` or `rlang::abort()` (#114).
+
+## Chore
+
+- Remove Copilot setup steps.
+
+## Continuous integration
+
+- Survive an archived CRAN package, cache revdep compiles (@krlmlr, #952).
+
+
 # duckplyr 1.2.1.9912 (2026-09-13)
 
 ## Features
